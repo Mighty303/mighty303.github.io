@@ -36,7 +36,7 @@ const Experience = () => {
         <section className='flex flex-col items-center min-h-screen bg-black'>
             <div className='mx-12 md:mx-24'>
                 <hr className='p-12' />
-                <h1 id='experience' className='text-white text-3xl mb-12'>Experience</h1>
+                <h1 id='experience' className='text-white font-extralight text-4xl mb-12'>EXPERIENCE</h1>
                 <div className='flex flex-col gap-14'>
                     {
                         work_exp.map((work, index) => {
