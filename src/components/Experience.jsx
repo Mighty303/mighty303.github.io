@@ -34,34 +34,32 @@ const work_exp = [
 const Experience = () => {
     return (
         <section className='flex flex-col items-center min-h-screen bg-black'>
-            <div className='mx-24'>
-                <div className='mx-96'>
-                    <hr className='p-12' />
-                    <h1 id='experience' className='text-white text-3xl mb-12'>Experience</h1>
-                    <div className='flex flex-col gap-14'>
-                        {
-                            work_exp.map((work, index) => {
-                                return (
-                                    <div key={index} className='flex flex-col gap-4'>
-                                        <div className='flex justify-between'>
-                                            <h2 className='text-2xl text-white'>{work.role}</h2>
-                                            <h3>{work.date}</h3>
-                                        </div>
-                                        <h3 className='text-blue-500'>{work.company}</h3>
-                                        <ul className='list-disc pl-5'>
-                                            {
-                                                work.bullets.map((bullet, index) => {
-                                                    return (
-                                                        <li key={index} className='text-gray-300 mb-1'>{bullet}</li>
-                                                    )
-                                                })
-                                            }
-                                        </ul>
+            <div className='mx-12 md:mx-24'>
+                <hr className='p-12' />
+                <h1 id='experience' className='text-white text-3xl mb-12'>Experience</h1>
+                <div className='flex flex-col gap-14'>
+                    {
+                        work_exp.map((work, index) => {
+                            return (
+                                <div key={index} className='flex flex-col gap-4'>
+                                    <div className='flex justify-between'>
+                                        <h2 className='text-2xl text-white'>{work.role}</h2>
+                                        <h3>{work.date}</h3>
                                     </div>
-                                )
-                            }
-                        )}
-                    </div>
+                                    <h3 className='text-blue-500'>{work.company}</h3>
+                                    <ul className='list-disc pl-5'>
+                                        {
+                                            work.bullets.map((bullet, index) => {
+                                                return (
+                                                    <li key={index} className='text-gray-300 mb-1'>{bullet}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        }
+                    )}
                 </div>
             </div>
         </section>
