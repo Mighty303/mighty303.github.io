@@ -5,7 +5,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import './App.css'
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />

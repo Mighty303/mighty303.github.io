@@ -33,7 +33,7 @@ const projects = [
 const Projects = () => {
     return (
         <section className='flex flex-col items-start min-h-screen bg-black pt-12'>
-            <h1 id='projects' className='text-white font-extralight mx-12 md:mx-24 text-4xl py-12'>FEATURED PROJECTS</h1>
+            <h1 id='projects' className='text-white font-extralight mx-12 md:mx-24 text-4xl py-12'>PROJECTS</h1>
             <div className='flex flex-col items-center mx-12 md:mx-24 py-12'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-12 sm:w-[50%] md:w-[60%]'>
                     {

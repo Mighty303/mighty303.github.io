@@ -14,8 +14,8 @@ const Hero = () => {
                     Hey, my name is
                     <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Martin Wong</span>
                 </h1>
-                <div className=''>
-                    <img src='images/pfp.png' alt='profile picture' />
+                <div className='flex justify-center items-center'>
+                    <img className='w-[80%]' src='images/pfp.png' alt='profile picture' />
                 </div>
                 <div className='type-writer text-2xl md:text-5xl text-white'>
                     <TypeWriter
