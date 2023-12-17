@@ -39,10 +39,10 @@ const Projects = () => {
                     {
                         projects.map((project, index) => {
                             return (
-                                <div key={index} id={index} className='flex flex-col gap-4 bg-gray-900 rounded-2xl transition-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-700'>
+                                <div key={index} id={index} className='group flex flex-col gap-4 bg-gray-900 rounded-2xl transition-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-700'>
                                     <img src={project.thumbnail} className='w-full rounded-2xl' alt={`${projects.name}`} />
                                     <div className='flex justify-between items-center px-4'>
-                                        <h2 className='text-blue-200 font-bold text-2xl'>{project.name}</h2>
+                                        <h2 className='text-blue-200 font-bold text-2xl group-hover:text-blue-400'>{project.name}</h2>
                                         <a href={project.github} rel='noreferrrer noopener' target='_blank'>
                                             <img src='images/icons/github.png' className='w-6 h-6 hover:opacity-50' />
                                         </a>
