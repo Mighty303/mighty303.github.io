@@ -33,17 +33,17 @@ const work_exp = [
 
 const Experience = () => {
     return (
-        <section className='flex flex-col items-center min-h-screen bg-black'>
+        <section id='experience' className='flex flex-col items-center min-h-screen bg-black text-white '>
             <div className='mx-12 md:mx-24'>
                 <hr className='p-12' />
-                <h1 id='experience' className='text-white font-extralight text-4xl mb-12'>EXPERIENCE</h1>
+                <h1 className='font-extralight text-4xl mb-12'>EXPERIENCE</h1>
                 <div className='flex flex-col gap-14'>
                     {
                         work_exp.map((work, index) => {
                             return (
                                 <div key={index} className='flex flex-col gap-4'>
                                     <div className='flex justify-between'>
-                                        <h2 className='text-2xl text-white'>{work.role}</h2>
+                                        <h2 className='text-2xl'>{work.role}</h2>
                                         <h3>{work.date}</h3>
                                     </div>
                                     <h3 className='text-blue-500'>{work.company}</h3>
@@ -51,7 +51,7 @@ const Experience = () => {
                                         {
                                             work.bullets.map((bullet, index) => {
                                                 return (
-                                                    <li key={index} className='text-gray-300 mb-1'>{bullet}</li>
+                                                    <li key={index} className='mb-1'>{bullet}</li>
                                                 )
                                             })
                                         }

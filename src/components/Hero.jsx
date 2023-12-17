@@ -8,16 +8,16 @@ const Hero = () => {
       };
 
     return (
-        <section className='bg-black h-auto'>
+        <section id='hero' className='bg-black h-auto text-white'>
             <div className='flex flex-col justify-center items-center gap-8'>
-                <h1 className='flex flex-col text-center text-white text-3xl gap-4 mt-8'>
+                <h1 className='flex flex-col text-center  text-3xl gap-4 mt-8'>
                     Hey, my name is
                     <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Martin Wong</span>
                 </h1>
                 <div className='flex justify-center items-center'>
                     <img className='w-[80%]' src='images/pfp.png' alt='profile picture' />
                 </div>
-                <div className='type-writer text-2xl md:text-5xl text-white'>
+                <div className='type-writer text-2xl md:text-5xl'>
                     <TypeWriter
                         options={{
                             strings: [

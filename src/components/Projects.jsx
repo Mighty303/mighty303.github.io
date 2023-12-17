@@ -32,14 +32,14 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className='flex flex-col items-start min-h-screen bg-black pt-12'>
-            <h1 id='projects' className='text-white font-extralight mx-12 md:mx-24 text-4xl py-12'>PROJECTS</h1>
+        <section id='projects' className='text-white flex flex-col items-start min-h-screen bg-black pt-12'>
+            <h1 className=' font-extralight mx-12 md:mx-24 text-4xl py-12'>PROJECTS</h1>
             <div className='flex flex-col items-center mx-12 md:mx-24 py-12'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-12 sm:w-[50%] md:w-[60%]'>
                     {
                         projects.map((project, index) => {
                             return (
-                                <div key={index} className='flex flex-col gap-4 bg-gray-900 rounded-2xl transition-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-700'>
+                                <div key={index} id={index} className='flex flex-col gap-4 bg-gray-900 rounded-2xl transition-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-700'>
                                     <img src={project.thumbnail} className='w-full rounded-2xl' alt={`${projects.name}`} />
                                     <div className='flex justify-between items-center px-4'>
                                         <h2 className='text-blue-200 font-bold text-2xl'>{project.name}</h2>
