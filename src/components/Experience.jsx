@@ -3,9 +3,9 @@ const work_exp = [
         role: 'Web Developer',
         company: 'Avena Tech Corporation',
         bullets: [
-            'Developed the company’s internal website, to deliver a user-friendly efficient platform for internal documents',
-            'Designed and developing external company site for a cleaner modern design',
-            'Successfully diagnosed and resolved complex issues with WordPress websites, including troubleshooting plugin conflicts, database connectivity problems, and server-related issues'
+            'Redesigned websites in Figma and developed them in React.js and Tailwind.css improving load times by 75%',
+            'Successfully diagnosed and resolved complex issues with WordPress websites, including troubleshooting plugin conflicts, database connectivity problems, and server-related issues',
+            'Communicated and organized meetings with clients to discuss requirements and design changes'
         ],
         date: 'Jul 2023 - Present'
     },
@@ -13,9 +13,9 @@ const work_exp = [
         role: 'Research Assistant',
         company: 'Simon Fraser Univserity',
         bullets: [
-            'Developed unity simulations for IMU sensor data in order to analyze whether it accurately matches the real world for machine learning models',
-            'Proposed an innovative approach to accelerate the data collection process without the need for physical sampling or camera-based video outputs',
-            'Competing in the premier international conference of Human Computer interaction (ACM CHI 2024)'
+            'Developed Unity simulations for IMU sensor data in order to analyze whether it accurately matches the real world for machine learning models',
+            'Conducted various tests using machine learning and T2M-GPT while modifying the code base to collect XYZ and rotational data generated from training data',
+            'Collaborated with graduate students from SFU and Darthmouth College under the supervision of Dr. Xing-Dong Yang'
         ],
         date: 'Jun 2023 - Sept 2023'
     },
@@ -24,7 +24,8 @@ const work_exp = [
         company: 'Auphan Software',
         bullets: [
             'Resolved 1000+ tickets for POS software systems, payment processor integration, and software installation with big North American companies',
-            'Collaborated with sales, development, and technical support teams to communicate regression reports and ensured tracking and support until resolution• Collaborated with sales, development, and technical support teams to communicate regression reports and ensured tracking and support until resolution',
+            'Collaborated with sales, development, and technical support teams to communicate regression reports and ensured tracking and support until resolution',
+            'Troubleshooted database and server outages involving Apache, PostgreSQL, and pgbouncer',
         ],
         date: 'Mar 2021 - Aug 2021'
     }
