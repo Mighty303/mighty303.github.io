@@ -10,7 +10,7 @@ const work_exp = [
         date: 'Jul 2023 - Present'
     },
     {
-        role: 'Undergraduate Research Assistant',
+        role: 'Research Assistant',
         company: 'Simon Fraser Univserity',
         bullets: [
             'Developed unity simulations for IMU sensor data in order to analyze whether it accurately matches the real world for machine learning models',
@@ -43,8 +43,8 @@ const Experience = () => {
                             return (
                                 <div key={index} className='flex flex-col gap-4'>
                                     <div className='flex justify-between'>
-                                        <h2 className='text-2xl'>{work.role}</h2>
-                                        <h3>{work.date}</h3>
+                                        <h2 className='text-lg md:text-2xl'>{work.role}</h2>
+                                        <h3 className='text-sm md:text-lg'>{work.date}</h3>
                                     </div>
                                     <h3 className='text-blue-500'>{work.company}</h3>
                                     <ul className='list-disc pl-5'>
