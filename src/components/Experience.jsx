@@ -42,7 +42,7 @@ const Experience = () => {
                         work_exp.map((work, index) => {
                             return (
                                 <div key={index} className='flex flex-col gap-4'>
-                                    <div className='flex justify-between'>
+                                    <div className='flex justify-between items-center'>
                                         <h2 className='text-lg md:text-2xl'>{work.role}</h2>
                                         <h3 className='text-sm md:text-lg'>{work.date}</h3>
                                     </div>
