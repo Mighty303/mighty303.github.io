@@ -7,34 +7,23 @@ const Header = () => {
         const projectsElement = document.getElementById('projects');
         const experienceElement = document.getElementById('experience');
         const educationElement = document.getElementById('education');
+        const footerElement = document.getElementById('footer');
+
+        let elementArray = [heroElement, projectsElement, experienceElement, educationElement, footerElement];
 
         if (theme === 'dark') {
             setTheme('light');
-            heroElement.classList.add('bg-white', 'text-black');
-            heroElement.classList.remove('bg-black', 'text-white');
-
-            projectsElement.classList.add('bg-white', 'text-black');
-            projectsElement.classList.remove('bg-black', 'text-white');
-
-            experienceElement.classList.add('bg-white', 'text-black');
-            experienceElement.classList.remove('bg-black', 'text-white');
-
-            educationElement.classList.add('bg-white', 'text-black');
-            educationElement.classList.remove('bg-black', 'text-white');
+            elementArray.forEach(element => {
+                element.classList.add('bg-white', 'text-black');
+                element.classList.remove('bg-black', 'text-white');
+            });
         } 
         else {
             setTheme('dark');
-            heroElement.classList.add('bg-black', 'text-white');
-            heroElement.classList.remove('bg-white', 'text-black');
-
-            projectsElement.classList.add('bg-black', 'text-white');
-            projectsElement.classList.remove('bg-white', 'text-black');
-
-            experienceElement.classList.add('bg-black', 'text-white');
-            experienceElement.classList.remove('bg-white', 'text-black');
-
-            educationElement.classList.add('bg-black', 'text-white');
-            educationElement.classList.remove('bg-white', 'text-black');
+            elementArray.forEach(element => {
+                element.classList.add('bg-black', 'text-white');
+                element.classList.remove('bg-white', 'text-black');
+            });
         }
     }
 
