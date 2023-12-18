@@ -3,6 +3,7 @@ const projects = [
         name: 'Kanban Planner',
         thumbnail: 'images/kanban.png',
         github: 'https://github.com/Mighty303/Kanban-planner',
+        link: 'https://kanban-planner.herokuapp.com/',
         description: 'This is a side project I have been working on alongside school for a couple months mainly for fun.',
         tech: ['React', 'Node.js', 'Express', 'MongoDB']
     },
@@ -10,6 +11,7 @@ const projects = [
         name: 'Project Kaisel',
         thumbnail: 'images/kaisel.png',
         github: 'https://github.com/cedafiso0403/frontend-kaisel-bot',
+        link: 'https://cedafiso0403.github.io/frontend-kaisel-bot/',
         description: 'Project Kaisel is an easy to use web-application for displaying game statistics for the current season.',
         tech: ['React']
     },
@@ -43,9 +45,10 @@ const Projects = () => {
                                     <img src={project.thumbnail} className='w-full rounded-2xl' alt={`${projects.name}`} />
                                     <div className='flex justify-between items-center px-4'>
                                         <h2 className='text-blue-200 font-bold text-2xl group-hover:text-blue-400'>{project.name}</h2>
-                                        <a href={project.github} rel='noreferrrer noopener' target='_blank'>
-                                            <img src='images/icons/github.png' className='w-6 h-6 hover:opacity-50' />
-                                        </a>
+                                        <div className='flex gap-2 justify-center items-center'>
+                                            {project.link && <a href={project.link} rel='noreferrrer noopener' target='_blank'><img src='images/icons/link.png' alt='link icon' className='w-6 h-6 hover:opacity-50' /></a>}
+                                            <a href={project.github} rel='noreferrrer noopener' target='_blank'><img src='images/icons/github.png' alt='github icon' className='w-6 h-6 hover:opacity-50' /></a>
+                                        </div>
                                     </div>
                                     <p className='text-gray-300 px-4'>{project.description}</p>
                                     <ul className='flex gap-2 px-4 pb-4'>
