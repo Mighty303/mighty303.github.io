@@ -41,7 +41,7 @@ const Projects = () => {
                     {
                         projects.map((project, index) => {
                             return (
-                                <div key={index} id={index} className='group flex flex-col gap-6 bg-gray-900 rounded-2xl transition-all ease-in-out hover:-translate-y-2 hover:scale-100 duration-300 hover:shadow-3xl'>
+                                <div key={index} id={index} className='group flex flex-col gap-6 bg-gray-900 rounded-2xl transition-all ease-out hover:-translate-y-2 hover:scale-100 duration-300 hover:shadow-3xl'>
                                     <a href={project.github} rel='noopener noreferrrer' target='_blank'>
                                         <img src={project.thumbnail} className='w-full rounded-t-2xl active:opacity-80' alt={`${projects.name}`} />
                                     </a>
