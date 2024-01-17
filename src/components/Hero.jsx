@@ -12,7 +12,7 @@ const Hero = () => {
             <div className='flex flex-col justify-center items-center gap-8'>
                 <h1 className='flex flex-col text-center text-3xl gap-4 mt-8'>
                     Hey, my name is
-                    <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Martin Wong</span>
+                    <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-500'>Martin Wong</span>
                 </h1>
                 <div className='flex justify-center items-center'>
                     <img id='pfp' className='w-[80%] rounded-full border-5 border-black' src='images/pfp.png' alt='profile picture' />

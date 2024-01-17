@@ -112,7 +112,7 @@ const ContactForm = () => {
                     {errors.client_message?.message}
                 </p>
             </div>
-            <button className='flex items-center gap-2 mx-auto bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-500 active:opacity-80 duration-300 '>
+            <button className='flex items-center gap-2 mx-auto bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-500 active:opacity-80 duration-300'>
                 <img src='images/icons/email.png' alt='email' className='h-5 w-5' />
                 Send Message
             </button>
