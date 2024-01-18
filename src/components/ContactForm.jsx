@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 
 const ContactForm = () => {
-
     const form = useRef();
     const [submitState, setSubmitState] = useState(null);
     const { 
@@ -38,7 +37,7 @@ const ContactForm = () => {
     return (
       <div className='flex justify-center h-auto md:h-auto overflow-hidden rounded-lg'>
         <form
-          className='p-8 border rounded-xl flex flex-col w-full md:w-1/3 gap-6'
+          className='p-8 md:p-12 border rounded-xl flex flex-col w-full md:w-1/3 gap-6'
           ref={form}
           onSubmit={handleSubmit(sendEmail)}
         >
@@ -56,7 +55,7 @@ const ContactForm = () => {
                         },
                     })}
                     placeholder='Name'
-                    className={`border border-${errors.name?.message ? 'rose-500' : 'gray-300' }  rounded-md p-3 bg-white text-black placeholder-gray-500`}
+                    className={`border-2 ${errors.name ? 'border-rose-500' : ''} rounded-md p-3 bg-white text-black placeholder-gray-500`}
                 />
                 <p className='text-red-500 font-semibold'>
                     {errors.name?.message}
@@ -76,7 +75,7 @@ const ContactForm = () => {
                     },
                     })}
                     placeholder='Email'
-                    className={`border border-${errors.client_email?.message ? 'rose-500' : 'gray-300' } rounded-md p-3 bg-white text-black placeholder-gray-500`}
+                    className={`border-2 ${errors.client_email ? 'border-rose-500' : ''} rounded-md p-3 bg-white text-black placeholder-gray-500`}
                 />
                 <p className='text-red-500 font-semibold'>
                     {errors.client_email?.message}
@@ -95,7 +94,7 @@ const ContactForm = () => {
                     },
                     })}
                     placeholder='+1 (604) 000-0000'
-                    className={`border border-${errors.client_phone?.message ? 'rose-500' : 'gray-300' } rounded-md p-3 bg-white text-black placeholder-gray-500`}
+                    className={`border-2 ${errors.client_phone ? 'border-rose-500' : ''} rounded-md p-3 bg-white text-black placeholder-gray-500`}
                 />
                 <p className='text-red-500 font-semibold'>
                     {errors.client_phone?.message}
@@ -104,15 +103,21 @@ const ContactForm = () => {
             <div className='flex flex-col gap-1'>
                 <label>Message</label>
                 <textarea
-                    {...register('client_message')}
-                    className='border border-gray-300 rounded-md px-2 pb-10 md:px-4 md:pt-4 md:pb-20 resize-none bg-white text-black placeholder-gray-500'
+                    {...register('client_message',
+                    {required: 'This is required',
+                    minLength: {
+                        value: 10,
+                        message: 'Message must be at least 10 characters',
+                    },
+                  })}
+                    className={`border-2 ${errors.client_message ? 'border-rose-500' : ''} rounded-md px-2 pb-10 md:px-4 md:pt-4 md:pb-20 resize-none bg-white text-black placeholder-gray-500`}
                     placeholder='Write your message here...'
                 />
                 <p className='text-red-500 font-semibold'>
                     {errors.client_message?.message}
                 </p>
             </div>
-            <button className='flex items-center gap-2 mx-auto bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-500 active:opacity-80 duration-300'>
+            <button className='flex items-center gap-2 mx-auto bg-blue-600 text-white px-4 py-3 mt-1 rounded-md hover:bg-blue-500 active:opacity-80 duration-300'>
                 <img src='images/icons/email.png' alt='email' className='h-5 w-5' />
                 Send Message
             </button>
