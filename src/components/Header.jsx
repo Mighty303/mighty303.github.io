@@ -7,9 +7,9 @@ const Header = () => {
         const projectsElement = document.getElementById('projects');
         const experienceElement = document.getElementById('experience');
         const educationElement = document.getElementById('education');
-        const footerElement = document.getElementById('footer');
+        const contactElement = document.getElementById('contact');
 
-        let elementArray = [heroElement, projectsElement, experienceElement, educationElement, footerElement];
+        let elementArray = [heroElement, projectsElement, experienceElement, educationElement, contactElement];
 
         if (theme === 'dark') {
             setTheme('light');
