@@ -21,7 +21,7 @@ const work_exp = [
         date: 'Jun 2023 - Sept 2023'
     },
     {
-        role: 'Tech Support',
+        role: 'Technical Support',
         company: 'Auphan Software',
         bullets: [
             'Resolved 1000+ tickets for POS software systems, payment processor integration, and software installation with big North American companies',
