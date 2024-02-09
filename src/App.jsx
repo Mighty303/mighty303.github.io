@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/" element={<><Header /><Hero /><Projects /><Experience /><Education /><Contact /><Footer /></>} />
         {/* Redirect /Portfolio to / */}
         <Route path="/Portfolio" element={<Navigate replace to="/" />} />
+        <Route path="*" element={<><Header /><Hero /><Projects /><Experience /><Education /><Contact /><Footer /></>} />
       </Routes>
     </Router>
     </>
