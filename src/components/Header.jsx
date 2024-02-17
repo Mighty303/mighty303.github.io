@@ -3,13 +3,14 @@ import React from "react";
 const Header = () => {
     const [theme, setTheme] = React.useState('dark')
     const toggleTheme = () => {
+        const siteElement = document.getElementById('site');
         const heroElement = document.getElementById('hero');
         const projectsElement = document.getElementById('projects');
         const experienceElement = document.getElementById('experience');
         const educationElement = document.getElementById('education');
         const contactElement = document.getElementById('contact');
 
-        let elementArray = [heroElement, projectsElement, experienceElement, educationElement, contactElement];
+        let elementArray = [siteElement, heroElement, projectsElement, experienceElement, educationElement, contactElement];
 
         if (theme === 'dark') {
             setTheme('light');
@@ -28,7 +29,7 @@ const Header = () => {
     }
 
     return (
-        <nav className='bg-[#111111] sticky top-0 z-50 flex justify-between text-white text-lg md:text-xl p-6 md:p-8 md:px-24 shadow-lg gap-4 md:gap-8'>
+        <nav className='bg-[#111111] sticky top-0 z-50 flex justify-between text-white text-lg md:text-xl p-6 md:p-8 md:px-24 shadow-lg gap-4 md:gap-8 backdrop-blur-md bg-opacity-80'>
             <a href='#' className='hover:text-blue-400 ease-in-out duration-500'>MW</a>
             <div className='flex gap-4 md:gap-8'>
                 <ul className='flex gap-4 md:gap-8'>
