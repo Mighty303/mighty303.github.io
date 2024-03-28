@@ -4,10 +4,10 @@ const projects = [
         thumbnail: 'images/BWS.png',
         link: 'https://bws.avenahost.com/',
         description: 'Redesigned and developed a dental clinic website to be more modern and improve load times.',
-        tech: ['React', 'Tailwind', 'NodeJS', 'MongoDB']
+        tech: ['NextJS', 'Tailwind']
     },
     {
-        name: 'Avena Tech Redesign (WIP)',
+        name: 'Avena Tech Redesign',
         thumbnail: 'images/avena.png',
         link: 'https://avenatech.ca/',
         description: 'Redesigned and developed company website to be more modern and user friendly.',
@@ -17,7 +17,6 @@ const projects = [
         name: 'Kanban Planner',
         thumbnail: 'images/kanban.png',
         github: 'https://github.com/Mighty303/Kanban-planner',
-        link: 'https://kanban-planner.herokuapp.com/',
         description: 'This is a side project I have been working on alongside school for a couple months mainly for fun.',
         tech: ['React', 'Node.js', 'Express', 'MongoDB']
     },
@@ -56,14 +55,14 @@ const Projects = () => {
                         projects.map((project, index) => {
                             return (
                                 <div key={index} id={index} className='group flex flex-col gap-6 h-full bg-gray-900 rounded-2xl transition-all ease-out hover:-translate-y-2 hover:scale-100 duration-300 hover:shadow-3xl'>
-                                    <a href={project.link || project.github} rel='noopener noreferrrer' target='_blank'>
+                                    <a href={project.link || project.github} rel='noopener noreferrer' target='_blank'>
                                         <img src={project.thumbnail} className='w-full rounded-t-2xl active:opacity-80' alt={`${projects.name}`} />
                                     </a>
                                     <div className='flex justify-between items-center px-4'>
                                         <h2 className='text-white font-bold text-2xl group-hover:text-blue-400'>{project.name}</h2>
                                         <div className='flex gap-2 justify-center items-center'>
-                                            {project.link && <a href={project.link} rel='noreferrrer noopener' target='_blank'><img src='images/icons/link.png' alt='link icon' className='w-6 h-6 hover:opacity-50' /></a>}
-                                            {project.github && <a href={project.github} rel='noreferrrer noopener' target='_blank'><img src='images/icons/github.png' alt='github icon' className='w-6 h-6 hover:opacity-50' /></a>}
+                                            {project.link && <a href={project.link} rel='noreferrer noopener' target='_blank'><img src='images/icons/link.png' alt='link icon' className='w-6 h-6 hover:opacity-50' /></a>}
+                                            {project.github && <a href={project.github} rel='noreferrer noopener' target='_blank'><img src='images/icons/github.png' alt='github icon' className='w-6 h-6 hover:opacity-50' /></a>}
                                         </div>
                                     </div>
                                     <p className='text-gray-300 px-4 3xl:h-12'>{project.description}</p>
