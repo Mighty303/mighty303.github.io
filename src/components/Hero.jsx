@@ -15,7 +15,7 @@ const Hero = () => {
                     <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-500'>Martin Wong</span>
                 </h1>
                 <div className='flex justify-center items-center'>
-                    <img id='pfp' className='w-2/3 md:w-96 lg:w-[23%] rounded-full' src='images/headshot.png' alt='profile picture' />
+                    <img id='pfp' className='w-2/3 md:w-96 lg:w-[23%] rounded-full' src='images/headshot.jpg' alt='profile picture' />
                 </div>
                 <div className='type-writer text-2xl md:text-5xl'>
                     <TypeWriter
