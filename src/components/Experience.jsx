@@ -3,7 +3,7 @@ const work_exp = [
         role: 'Software Developer Intern',
         company: 'Avena Tech Corporation',
         bullets: [
-            'Redesigned websites in Figma and developed them in React.js and Tailwind.css improving load times by 75%',
+            'Redesigned websites in Figma and developed them in React.js and Tailwind.css improving load times by 105%',
             'Developed and integrated REST API endpoints using Express.js and MongoDB, successfully migrating over 60 Wordpress blogs to a new, efficient platform for future blogs',
             'Successfully diagnosed and resolved complex issues with WordPress websites, including troubleshooting plugin conflicts, database connectivity problems, and server-related issues to improve load times',
             'Coordinated 8 client meetings to discuss requirements and design changes, ensuring alignment with client needs and adherence to Nielsen Norman Group’s UX/UI principles'
