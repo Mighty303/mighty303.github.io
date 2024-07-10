@@ -2,7 +2,7 @@ const projects = [
     {
         name: 'Broadway Smiles Redesign (WIP)',
         thumbnail: 'images/BWS.png',
-        link: 'https://broadwaysmiles.avenahost.com/',
+        link: 'https://broadwaysmiles.ca/',
         description: 'Redesigned and developed a dental clinic website to be more modern and improve load times.',
         tech: ['NextJS', 'Tailwind']
     },
