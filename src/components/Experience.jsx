@@ -61,7 +61,7 @@ const Experience = () => {
                                 <h3 
                                     key={index} 
                                     onClick={() => selectExperience(index)} 
-                                    className={index === experience ? `text-lg md:text-xl px-8 py-6 bg-[#1F1E1E] border-l-4 border-white cursor-pointer` : `text-lg md:text-xl px-8 py-6 border-l-4 border-[#1F1E1E] cursor-pointer`}
+                                    className={index === experience ? `text-lg md:text-xl px-8 py-6 text-nowrap bg-[#1F1E1E] border-l-4 border-white cursor-pointer` : `text-lg md:text-xl px-8 py-6 text-nowrap border-l-4 border-[#1F1E1E] cursor-pointer`}
                                 >{work.company}</h3>
                             )
                         })}
