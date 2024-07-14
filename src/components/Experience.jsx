@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 const work_exp = [
+    {
+        role: 'Software Developer Intern',
+        company: 'Rivian',
+        bullets: [
+        ],
+        date: 'Sep 2024 - Apr 2025'
+    },
     {
         role: 'Software Developer Intern',
         company: 'Avena Tech Corporation',
@@ -34,35 +43,59 @@ const work_exp = [
 
 
 const Experience = () => {
+    const [experience, setExperience] = useState(0);
+
+    const selectExperience = (index) => {
+        setExperience(index);
+    }
+
     return (
         <section id='experience' className='flex flex-col items-center bg-black text-white '>
             <div className='mx-12 md:mx-24 w-[80%]'>
                 <hr className='p-12 mt-12' />
                 <h1 className='font-extralight text-4xl mb-12'>EXPERIENCE</h1>
-                <div className='flex flex-col gap-14'>
-                    {
-                        work_exp.map((work, index) => {
+                <section className='flex flex-col md:flex-row justify-start items-start gap-12'>
+                    <div className='flex flex-col'>
+                        {work_exp.map((work, index) => {
                             return (
-                                <div key={index} className='flex flex-col gap-4'>
-                                    <div className='flex justify-between items-center'>
-                                        <h2 className='text-lg md:text-2xl'>{work.role}</h2>
-                                        <h3 className='text-sm md:text-lg'>{work.date}</h3>
-                                    </div>
-                                    <h3 className='text-blue-500'>{work.company}</h3>
-                                    <ul className='list-disc pl-5'>
-                                        {
-                                            work.bullets.map((bullet, index) => {
-                                                return (
-                                                    <li key={index} className='mb-1'>{bullet}</li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </div>
+                                <h3 
+                                    key={index} 
+                                    onClick={() => selectExperience(index)} 
+                                    className={index === experience ? `text-lg md:text-xl px-8 py-6 bg-[#1F1E1E] border-l-4 border-white cursor-pointer` : `text-lg md:text-xl px-8 py-6 border-l-4 border-[#1F1E1E] cursor-pointer`}
+                                >{work.company}</h3>
                             )
-                        }
-                    )}
-                </div>
+                        })}
+                    </div>
+                    <div className='w-full'>
+                        {
+                            work_exp.map((work, index) => {
+                                return (
+                                    <div key={index}>
+                                        {
+                                            index === experience &&
+                                            <section className='flex flex-col gap-4 min-w-full max-w-full'>
+                                                <div className='flex items-center justify-between'>
+                                                    <h2 className='text-lg md:text-4xl'>{work.company}</h2>
+                                                    <h3 className='text-sm md:text-xl text-gray-400'>{work.date}</h3>
+                                                </div>
+                                                <h3 className='text-blue-500 text-xl'>{work.role}</h3>
+                                                <ul className='list-disc pl-5'>
+                                                    {
+                                                        work.bullets.map((bullet, index) => {
+                                                            return (
+                                                                <li key={index} className='mb-3'>{bullet}</li>
+                                                            )
+                                                        })
+                                                    }
+                                                </ul>
+                                            </section>
+                                        }
+                                    </div>
+                                )
+                            }
+                        )}
+                    </div>
+                </section>
             </div>
         </section>
     );
