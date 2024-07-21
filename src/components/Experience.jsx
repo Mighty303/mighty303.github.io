@@ -75,8 +75,8 @@ const Experience = () => {
                                             index === experience &&
                                             <section className='flex flex-col gap-4 min-w-full max-w-full'>
                                                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4'>
-                                                    <h2 className='text-2xl md:text-4xl'>{work.company}</h2>
-                                                    <h3 className='text-sm md:text-xl text-gray-300'>{work.date}</h3>
+                                                    <h2 className='text-2xl md:text-3xl'>{work.company}</h2>
+                                                    <h3 className='text-sm md:text-lg text-gray-300'>{work.date}</h3>
                                                 </div>
                                                 <h3 className='text-blue-500 text-xl'>{work.role}</h3>
                                                 <ul className='list-disc pl-5'>
