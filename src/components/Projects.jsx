@@ -1,10 +1,10 @@
 const projects = [
     {
-        name: 'Broadway Smiles Redesign (WIP)',
+        name: 'Broadway Smiles Redesign',
         thumbnail: 'images/BWS.png',
         link: 'https://broadwaysmiles.ca/',
         description: 'Redesigned and developed a dental clinic website to be more modern and improve load times.',
-        tech: ['NextJS', 'Tailwind']
+        tech: ['NextJS', 'Tailwind', 'NodeJs', 'ExpressJS', 'PostgreSQL']
     },
     {
         name: 'Avena Tech Redesign',
@@ -47,7 +47,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id='projects' className='text-white flex flex-col items-start min-h-screen 3xl:min-h-min bg-black pt-12'>
+        <section id='projects' className='text-white flex flex-col items-start min-h-screen 3xl:min-h-min bg-black pt-12 mt-24 sm:mt-0 md:mt-0'>
             <h1 className=' font-extralight mx-12 md:mx-24 text-4xl py-12'>PROJECTS</h1>
             <div className='flex justify-center mx-12 md:mx-24 py-12'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 items-center justify-center gap-12 sm:w-[50%] md:w-[100%] lg:w-[90%] 3xl:w-[80%]'>

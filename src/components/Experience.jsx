@@ -13,9 +13,9 @@ const work_exp = [
         company: 'Avena Tech Corporation',
         bullets: [
             'Redesigned, developed and deployed full-stack websites utilizing Figma, React, and Tailwind optimizing load times by 75%',
-            'Increased deployment speed by 50% by creating a CI/CD pipeline for integration, unit testing, and deployment on a VPS',
-            'Developed and deployed containerized REST API endpoints using Express and Postgres, migrating over 60 WordPress blogs to a new, efficient platform for future blogs',
-            'Coordinated 8 client meetings to discuss requirements and design changes, ensuring alignment with client needs and adherence to Nielsen Norman Group’s UX/UI principles'
+            'Streamlined deployment by utilizing BASH and Docker Compose to create a CI/CD pipeline for testing, building, and deploying Docker containers, reducing development time by 50%',
+            'Developed and deployed a new blogging platform with containerized REST API endpoints using Express.js, AWS S3, and PostgreSQL, migrating over 60 WordPress blogs to a new, efficient platform for future blogs',
+            'Coordinated 20 meetings to discuss requirements and design changes with clients, outsourced developers, UX/UI designers, and SEO experts to optimize website ranking and user engagement'
         ],
         date: 'Jul 2023 - Present'
     },
@@ -61,7 +61,7 @@ const Experience = () => {
                                 <h3 
                                     key={index} 
                                     onClick={() => selectExperience(index)} 
-                                    className={index === experience ? `text-lg md:text-xl px-8 py-6 text-nowrap bg-[#1F1E1E] border-l-4 border-white cursor-pointer` : `text-lg md:text-xl px-8 py-6 text-nowrap border-l-4 border-[#1F1E1E] cursor-pointer`}
+                                    className={index === experience ? `text-lg md:text-xl px-4 py-4 md:px-5 md:py-5 text-nowrap bg-[#1F1E1E] border-l-4 border-white cursor-pointer` : `text-lg md:text-xl px-4 py-4 md:px-5 md:py-5 text-nowrap border-l-4 border-[#1F1E1E] cursor-pointer`}
                                 >{work.company}</h3>
                             )
                         })}
@@ -74,9 +74,9 @@ const Experience = () => {
                                         {
                                             index === experience &&
                                             <section className='flex flex-col gap-4 min-w-full max-w-full'>
-                                                <div className='flex items-center justify-between'>
-                                                    <h2 className='text-lg md:text-4xl'>{work.company}</h2>
-                                                    <h3 className='text-sm md:text-xl text-gray-400'>{work.date}</h3>
+                                                <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4'>
+                                                    <h2 className='text-2xl md:text-4xl'>{work.company}</h2>
+                                                    <h3 className='text-sm md:text-xl text-gray-300'>{work.date}</h3>
                                                 </div>
                                                 <h3 className='text-blue-500 text-xl'>{work.role}</h3>
                                                 <ul className='list-disc pl-5'>
