@@ -16,7 +16,7 @@ const Stars = ({ children }) => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    // console.log(container);
   };
 
   const options = useMemo(
