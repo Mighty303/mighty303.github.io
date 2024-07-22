@@ -1,5 +1,12 @@
 const projects = [
     {
+        name: 'MartinGPT',
+        thumbnail: 'images/martingpt.png',
+        github: 'https://github.com/Mighty303/martingpt',
+        description: 'Personalized AI discord bot trained on 120,000 of my discord messages.',
+        tech: ['Python', 'Discord.js', 'FastAPI', 'Llama2', 'AWS EC2']
+    },
+    {
         name: 'Broadway Smiles Redesign',
         thumbnail: 'images/BWS.png',
         link: 'https://broadwaysmiles.ca/',
