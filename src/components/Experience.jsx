@@ -63,7 +63,7 @@ const Experience = () => {
                         {work_exp.map((work, index) => {
                             return (
                                 <figure key={index} 
-                                    className={`min-h-20 flex gap-4 items-center text-lg md:text-xl border-l-4 border-[#1F1E1E] cursor-pointer px-4 pr-24 py-4 text-nowrap ${index === experience ? 'bg-[#1F1E1E] border-white' : ''}`}
+                                    className={`min-h-20 flex gap-4 items-center text-lg md:text-xl border-l-4 border-[#1F1E1E] cursor-pointer px-4 pr-24 py-4 text-nowrap ${index === experience ? 'bg-[#1F1E1E] border-white text-white' : ''}`}
                                     onClick={() => selectExperience(index)}>
                                     <img src={work.thumbnail} alt={work.company} className='w-12 h-full md:w-30 md:h-full' />
                                     <h3>{work.company}</h3>

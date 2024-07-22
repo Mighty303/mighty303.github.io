@@ -22,10 +22,9 @@ const Hero = () => {
                         options={{
                             strings: [
                                 'I am a 3rd year CS 👨‍🎓 at SFU', 
+                                "I enjoy badminton🏸, working out🏋️, and Brazilian Jiu-Jitsu🥋",
                                 "Aspiring Software Engineer👨‍💻",
                                 "Part-time Full Stack 🌐 Developer", 
-                                "🔬Undergrad Research Assistant",
-                                "Part-time Tech Support🛠️"
                             ],
                             autoStart: true,
                             loop: true,
