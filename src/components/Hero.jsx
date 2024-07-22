@@ -8,7 +8,7 @@ const Hero = () => {
       };
 
     return (
-        <section id='hero' className='bg-black h-svh text-white'>
+        <section id='hero' className=' h-svh text-white'>
             <div className='flex flex-col justify-center items-center gap-8'>
                 <h1 className='flex flex-col text-center text-3xl gap-4 mt-8'>
                     Hey, my name is

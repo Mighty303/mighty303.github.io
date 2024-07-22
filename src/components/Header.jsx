@@ -16,13 +16,13 @@ const Header = () => {
             setTheme('light');
             elementArray.forEach(element => {
                 element.classList.add('bg-white', 'text-black');
-                element.classList.remove('bg-black', 'text-white');
+                element.classList.remove('', 'text-white');
             });
         } 
         else {
             setTheme('dark');
             elementArray.forEach(element => {
-                element.classList.add('bg-black', 'text-white');
+                element.classList.add('', 'text-white');
                 element.classList.remove('bg-white', 'text-black');
             });
         }

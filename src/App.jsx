@@ -5,18 +5,20 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Stars from './components/Stars';
 import './App.css';
 
 const App = () => {
   return (
-    <div id='site' className='bg-black'>
-      <Header />
-      <Hero />
-      <Projects />
-      <Experience />
-      <Education />
-      <Contact />
-      <Footer />
+    <div id='site' className='relative'>
+        <Stars />
+        <Header />
+        <Hero />
+        <Projects />
+        <Experience />
+        <Education />
+        <Contact />
+        <Footer />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const education = [
 
 const Education = () => {
     return (
-        <section id='education' className='flex flex-col items-center bg-black text-white '>
+        <section id='education' className='flex flex-col items-center  text-white '>
             <div className='mx-12 md:mx-24 py-12 w-[80%]'>
                 <hr className='p-12 mt-12' />
                 <h1 className='text-4xl font-extralight mb-12'>EDUCATION</h1>
