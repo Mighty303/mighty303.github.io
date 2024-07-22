@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <header id='hero' className=' h-svh text-white'>
-            <section className='flex flex-col justify-center items-center gap-2 sm:gap-6 md:gap-12'>
+            <section className='flex flex-col justify-center items-center gap-6 sm:gap-6 md:gap-12'>
                 <h1 className='flex flex-col text-center text-3xl gap-4 mt-8'>
                     Hey, my name is
                     <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-500'>Martin Wong</span>
