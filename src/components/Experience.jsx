@@ -57,7 +57,7 @@ const Experience = () => {
         <section id='experience' className='flex flex-col items-center  text-white '>
             <div className='mx-12 md:mx-24 w-[80%]'>
                 <hr className='p-12 mt-12' />
-                <h1 className='font-extralight text-4xl mb-12'>EXPERIENCE</h1>
+                <h2 className='font-extralight text-4xl mb-12'>EXPERIENCE</h2>
                 <section className='flex flex-col md:flex-row justify-start items-start gap-12'>
                     <div className='flex flex-col'>
                         {work_exp.map((work, index) => {
