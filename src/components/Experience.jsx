@@ -2,6 +2,17 @@ import { useState } from "react";
 
 const work_exp = [
     {
+        company: 'Electronic Arts',
+        thumbnail: 'images/icons/jobs/EA.png',
+        role: 'Incoming Software Developer Intern',
+        bullets: [
+            'Contributed to the development on the Rivian mobile app across iOS and Android Platforms',
+            'Ignored and fixed 6 flaky unit tests on pipeline to unblock the Android team and improve pipeline up-time by 50%',
+            'Developed app debug options to mock error states on vehicles improving developer and QA efficiency to test end-to-end'
+        ],
+        date: 'May 2025 - Aug 2025'
+    },
+    {
         company: 'Rivian',
         thumbnail: 'images/icons/jobs/rivian.png',
         role: 'Software Developer Intern',
