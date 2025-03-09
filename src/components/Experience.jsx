@@ -4,7 +4,7 @@ const work_exp = [
     {
         company: 'Electronic Arts',
         thumbnail: 'images/icons/jobs/EA.png',
-        role: 'Incoming Software Developer Intern',
+        role: 'Incoming Software Engineer Intern',
         bullets: [
         ],
         date: 'May 2025 - Aug 2025'
@@ -12,15 +12,19 @@ const work_exp = [
     {
         company: 'Rivian',
         thumbnail: 'images/icons/jobs/rivian.png',
-        role: 'Software Developer Intern',
+        role: 'Software Engineer Intern',
         bullets: [
+            'Developed 2FA and car key migration features on the Rivian mobile app on iOS and Android using Kotlin and Swift',
+            'Implemented Bluetooth and cloud remote commands for 2FA features through byte format or Protobuf for all Rivian vehicles',
+            'Prototyped a native iOS screen recorder that records using screenshots and a pixel buffer when app in foreground in 30 second intervals, utilizing Swift to automate bug reporting and testing for over 900+ App Center users',
+            'Fixed 6 flaky unit tests on pipeline to unblock the Android team and improve pipeline up-time by 50%'
         ],
         date: 'Sep 2024 - Apr 2025'
     },
     {
         company: 'Avena Tech Corporation',
         thumbnail: 'images/icons/jobs/avena.png',
-        role: 'Software Developer Intern',
+        role: 'Web Developer',
         bullets: [
             'Redesigned, developed and deployed full-stack websites utilizing Figma, React, and Tailwind optimizing load times by 75%',
             'Streamlined deployment by utilizing BASH and Docker Compose to create a CI/CD pipeline for testing, building, and deploying Docker containers, reducing development time by 50%',
@@ -71,10 +75,10 @@ const Experience = () => {
                         {work_exp.map((work, index) => {
                             return (
                                 <figure key={index} 
-                                    className={`min-h-20 flex gap-4 items-center text-lg md:text-xl border-l-4 border-[#1F1E1E] cursor-pointer px-4 pr-24 py-4 text-nowrap ${index === experience ? 'bg-[#1F1E1E] border-white text-white' : ''}`}
+                                    className={`min-h-20 flex gap-4 items-center text-lg md:text-xl lg:text-md border-l-4 border-[#1F1E1E] cursor-pointer px-4 pr-24 py-4 text-nowrap ${index === experience ? 'bg-[#1F1E1E] text-white' : ''}`}
                                     onClick={() => selectExperience(index)}>
                                     <img src={work.thumbnail} alt={work.company} className='w-12 h-full md:w-30 md:h-full' />
-                                    <h3>{work.company}</h3>
+                                    <h className='whitespace-nowrap'>{work.company}</h>
                                 </figure>
                             )
                         })}

@@ -11,7 +11,7 @@ const Hero = () => {
         <header id='hero' className=' h-svh text-white'>
             <section className='flex flex-col justify-center items-center gap-6 sm:gap-6 md:gap-12'>
                 <h1 className='flex flex-col text-center text-3xl gap-4 mt-8'>
-                    Hey, my name is
+                👋 Hey, my name is
                     <span className='pb-4 text-6xl md:text-7xl font-semibold text-transparent bg-clip-text inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-500'>Martin Wong</span>
                 </h1>
                 <div className='flex justify-center items-center'>
@@ -21,10 +21,9 @@ const Hero = () => {
                     <TypeWriter
                         options={{
                             strings: [
-                                'I am a 3rd year CS 👨‍🎓 at SFU', 
-                                "Active in 🏸🏋️🥋",
-                                "Currently interested in cloud ☁️",
-                                "Part-time Software Developer 👨‍💻", 
+                                "I'm a 3rd year CS student at SFU📚", 
+                                "SWE Intern @ Rivian",
+                                "Incoming SWE Intern @ EA" 
                             ],
                             autoStart: true,
                             loop: true,
@@ -33,7 +32,7 @@ const Hero = () => {
                     />
                 </div>
                 <section className='flex flex-col md:flex-row gap-4 font-black'>
-                    <a href='Resume_2_0_1.pdf' rel='noopener noreferrer' target='_blank'>
+                    <a href='Resume_2_0_3.pdf' rel='noopener noreferrer' target='_blank'>
                         <div className='h-14 w-32 md:w-40 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-[3px]'>
                             <div className='flex h-full w-full items-center justify-center bg-black hover:bg-gradient-to-r hover:from-indigo-500 from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% p-[3px]'>
                                 <img src='images/icons/resume.png' alt='resume' className='h-5 w-5' />
