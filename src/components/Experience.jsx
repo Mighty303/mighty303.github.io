@@ -4,8 +4,11 @@ const work_exp = [
     {
         company: 'Electronic Arts',
         thumbnail: 'images/icons/jobs/EA.png',
-        role: 'Incoming Software Engineer Intern',
+        role: 'Software Engineer Intern',
         bullets: [
+            'Developed an AI-powered Slack bot to assist Marketplace engineers in answering questions from game teams using internal documentation, production codebases, powered by a Retrieval-Augmented Generation (RAG) pipeline',
+            'Built an embedding pipeline to parse and index 300+ pages of documentation and 2 production codebases via repo cloning, schema extraction, and chunking (recursive for code, token-based for docs) using Amazon Titan V2 and PostgreSQL/pgvector',
+            'Deployed RAG system with pgvector on AWS Aurora, Slack history storage, and FastAPI on AWS EKS, powered by AWS Bedrock'
         ],
         date: 'May 2025 - Aug 2025'
     },
@@ -17,7 +20,6 @@ const work_exp = [
             'Developed 2FA and car key migration features on the Rivian mobile app on iOS and Android using Kotlin and Swift',
             'Implemented Bluetooth and cloud remote commands for 2FA features through byte format or Protobuf for all Rivian vehicles',
             'Prototyped a native iOS screen recorder that records using screenshots and a pixel buffer when app in foreground in 30 second intervals, utilizing Swift to automate bug reporting and testing for over 900+ App Center users',
-            'Fixed 6 flaky unit tests on pipeline to unblock the Android team and improve pipeline up-time by 50%'
         ],
         date: 'Sep 2024 - Apr 2025'
     },
