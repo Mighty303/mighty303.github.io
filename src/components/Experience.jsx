@@ -6,8 +6,9 @@ const work_exp = [
         thumbnail: 'images/icons/jobs/EA.png',
         role: 'Software Engineer Intern',
         bullets: [
-            'Developed an AI-powered Slack bot to assist Marketplace engineers in answering questions from game teams using internal documentation, production codebases, powered by a Retrieval-Augmented Generation (RAG) pipeline',
+            'Built and deployed an AI-powered Slack bot with RAG pipeline, cutting onboarding time by 40% and helping 30+ engineers quickly resolve codebase and documentation questions',
             'Built an embedding pipeline to parse and index 300+ pages of documentation and 2 production codebases via repo cloning, schema extraction, and chunking (recursive for code, token-based for docs) using Amazon Titan V2 and PostgreSQL/pgvector',
+            'Designed a custom MCP service with a scoring system (0–10) to dynamically rank and retrieve from docs, code, chat history, and user feedback, improving answer relevance by 35% and reducing unnecessary LLM calls',
             'Deployed RAG system with pgvector on AWS Aurora, Slack history storage, and FastAPI on AWS EKS, powered by AWS Bedrock'
         ],
         date: 'May 2025 - Aug 2025'
