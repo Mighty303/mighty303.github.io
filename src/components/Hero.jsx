@@ -32,7 +32,7 @@ const Hero = () => {
                     />
                 </div>
                 <section className='flex flex-col md:flex-row gap-4 font-black'>
-                    <a href='Resume_2_2_1.pdf' rel='noopener noreferrer' target='_blank'>
+                    <a href='Resume_2_2_3.pdf' rel='noopener noreferrer' target='_blank'>
                         <div className='h-14 w-32 md:w-40 rounded-md bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-[3px]'>
                             <div className='flex h-full w-full items-center justify-center bg-black hover:bg-gradient-to-r hover:from-indigo-500 from-10% hover:via-sky-500 hover:via-30% hover:to-emerald-500 hover:to-90% p-[3px]'>
                                 <img src='images/icons/resume.png' alt='resume' className='h-5 w-5' />
