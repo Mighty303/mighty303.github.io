@@ -6,9 +6,9 @@ const work_exp = [
         thumbnail: 'images/icons/jobs/EA.png',
         role: 'Software Engineer Intern',
         bullets: [
-            'Built and deployed an AI-powered Slack bot with RAG pipeline, cutting onboarding time by 40% and helping 30+ engineers quickly resolve codebase and documentation questions',
-            'Built a scalable embedding pipeline indexing 2 production codebases (1M+ lines, 8,000 files) and 300+ pages of docs using recursive code chunking, token-based doc chunking, Amazon Titan V2, and PostgreSQL/pgvector',
-            'Designed a custom MCP service with a scoring system (0–10) to dynamically rank and retrieve from docs, code, chat history, and user feedback, improving answer relevance by 35% and reducing unnecessary LLM calls',
+            'Engineered and deployed an intelligent internal tooling system with LLM RAG pipeline using Python, cutting onboarding time by 40% and helping 30+ engineers quickly resolve codebase and documentation questions',
+            'Built a scalable vector embedding pipeline indexing millions of lines of production codebases and 300+ pages of docs using token-based chunking strategies, AWS Bedrock, and PostgreSQL/pgvector',
+            'Designed a custom MCP server with a scoring system (0–10) to dynamically rank and retrieve from docs, code, chat history, and user feedback, improving answer relevance by 35% and reducing unnecessary LLM calls',
             'Deployed RAG system with pgvector on AWS Aurora, and FastAPI on AWS EKS, powered by AWS Bedrock, improving query performance while reducing infrastructure spend by an estimated 35%'
         ],
         date: 'May 2025 - Aug 2025'
@@ -18,7 +18,7 @@ const work_exp = [
         thumbnail: 'images/icons/jobs/rivian.png',
         role: 'Software Engineer Intern',
         bullets: [
-            'Led mobile development of a 2FA-secured driving feature on iOS and Android using Swift and Kotlin, enabling secure remote commands across all Rivian vehicles and enabled by 500+ daily drivers within weeks of launch',
+            'Led the mobile development of a 2FA-secured driving feature on iOS and Android using Swift and Kotlin, enabling secure remote commands across all Rivian vehicles directly affecting 10,000+ customers',
             'Implemented Bluetooth and cloud remote commands for 2FA features through byte format or Protobuf for all Rivian vehicles',
             'Prototyped a native iOS screen recorder that records using screenshots and a pixel buffer when app in foreground in 30 second intervals, utilizing Swift to automate bug reporting and testing for over 900+ App Center users',
         ],
