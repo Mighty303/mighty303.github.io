@@ -43,20 +43,20 @@ const projects = [
         description: 'Project Kaisel is an easy to use web-application for displaying game statistics for the current season.',
         tech: ['React']
     },
-    {
-        name: 'Pokemon',
-        thumbnail: 'images/pokemon.png',
-        github: 'https://github.com/Mighty303/Project-Pokemon',
-        description: 'Text-based Pokemon game practicing OOP concepts in Python. This was a high school passion project written in May 2020.',
-        tech: ['Python']
-    },
-    {
-        name: 'Sudoku Solver',
-        thumbnail: 'images/sudoku.png',
-        github: 'https://github.com/Mighty303/SudokuSolver',
-        description: 'Recreated a sudoku solver using the recursive backtracking algorithm using an ArrayList to store positions.',
-        tech: ['Java']
-    },
+    // {
+    //     name: 'Pokemon',
+    //     thumbnail: 'images/pokemon.png',
+    //     github: 'https://github.com/Mighty303/Project-Pokemon',
+    //     description: 'Text-based Pokemon game practicing OOP concepts in Python. This was a high school passion project written in May 2020.',
+    //     tech: ['Python']
+    // },
+    // {
+    //     name: 'Sudoku Solver',
+    //     thumbnail: 'images/sudoku.png',
+    //     github: 'https://github.com/Mighty303/SudokuSolver',
+    //     description: 'Recreated a sudoku solver using the recursive backtracking algorithm using an ArrayList to store positions.',
+    //     tech: ['Java']
+    // },
 ]
 
 
