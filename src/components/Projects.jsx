@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: 'Encrypted Chat App',
+        thumbnail: 'images/chat.png',
+        link: 'http://p2p-client.martinwong.me/',
+        github: 'https://github.com/Mighty303/p2p-file-sharing',
+        description: 'Peer-to-peer chat and file sharing application built with WebRTC, React, and end-to-end encryption.',
+        tech: ['React', 'TypeScript', 'WebRTC', 'Node.js', 'PeerJS']
+    },
+    {
         name: 'MartinGPT',
         thumbnail: 'images/martingpt.png',
         github: 'https://github.com/Mighty303/martingpt',

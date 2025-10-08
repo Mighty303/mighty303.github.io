@@ -37,7 +37,7 @@ const ContactForm = () => {
     return (
       <div className='flex justify-center h-auto md:h-auto overflow-hidden rounded-lg'>
         <form
-          className='p-8 md:p-12 border-2 rounded-xl flex flex-col w-full md:w-2/3 lg:w-2/4 xl:w-1/4 2xl:1/5 gap-6'
+          className='p-8 md:p-12 border-2 rounded-xl flex flex-col w-full md:w-2/3 lg:w-2/4 xl:w-2/6 2xl:1/5 gap-6'
           ref={form}
           onSubmit={handleSubmit(sendEmail)}
         >
