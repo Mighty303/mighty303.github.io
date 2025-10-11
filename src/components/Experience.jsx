@@ -6,7 +6,7 @@ const work_exp = [
         thumbnail: 'images/icons/jobs/EA.png',
         role: 'Software Engineer Intern',
         bullets: [
-            '   M RAG pipeline using Python, cutting onboarding time by 40% and helping 30+ engineers quickly resolve codebase and documentation questions',
+            'Engineered and deployed an intelligent internal tooling system with LLM RAG pipeline using Python, cutting onboarding time by 40% and helping 30+ engineers quickly resolve codebase and documentation questions',
             'Built a scalable vector embedding pipeline indexing millions of lines of production codebases and 300+ pages of docs using token-based chunking strategies, AWS Bedrock, and PostgreSQL/pgvector',
             'Designed a custom MCP server with a scoring system (0–10) to dynamically rank and retrieve from docs, code, chat history, and user feedback, improving answer relevance by 35% and reducing unnecessary LLM calls',
             'Deployed RAG system with pgvector on AWS Aurora, and FastAPI on AWS EKS, powered by AWS Bedrock, reducing infrastructure spend by an estimated 35%'
