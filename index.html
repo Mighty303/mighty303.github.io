@@ -1,19 +1,84 @@
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
-    <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <meta name="description" content="Personal Portfolio for Martin Wong">
-    <meta property="og:title" content="Martin Wong">
-    <meta property="og:description" content="Personal Portfolio for Martin Wong">
-    <meta property="og:image" content="https://i.imgur.com/HWOnFW9.png">
-    <meta property="og:url" content="https://Mighty303.github.io/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martin Wong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="favicon.ico" />
   </head>
-  <body>
-    <div id='root'></div>
-    <script type='module' src='/src/main.jsx'></script>
+
+  <body class="bg-white text-gray-900">
+    <main class="max-w-3xl mx-auto px-6 py-16">
+      <div class="flex items-center gap-6">
+        <img
+          src="headshot.png"
+          alt="Martin Wong"
+          class="w-32 h-32 rounded-full object-cover"
+        />
+
+        <div>
+          <h1 class="text-3xl font-semibold">Martin Wong</h1>
+          <div class="mt-2 space-x-3 text-blue-600">
+            <a href="mailto:martinwong303@gmail.com" class="hover:underline">email</a>
+            <span>|</span>
+            <a href="https://github.com/Mighty303" class="hover:underline">github</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/martin-wong303/" class="hover:underline">linkedin</a>
+            <span>|</span>
+            <a href="Resume_2_3_8.pdf" class="hover:underline">resume</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-10 space-y-6">
+        <p>
+          I’m Martin, a computer science student at SFU focused on
+          distributed systems, networking, and infrastructure.
+          I like working close to real systems and production constraints.
+        </p>
+
+        <div>
+          <p class="font-medium">Experience:</p>
+          <ul class="list-disc list-inside mt-2 space-y-1">
+            <li>
+                Software Engineering Intern @ Electronic Arts; internal
+                infrastructure, large-scale data indexing, cost-efficient systems
+            </li>
+            <li>
+            Software Engineering Intern @ Rivian; native iOS/Android, product team,
+                <a
+                    href="https://theevreport.com/rivian-software-boosts-energy-security"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-600 hover:underline"
+                >
+                    multi-factor drive feature
+                </a>and
+                <a
+                    href="https://stories.rivian.com/software-digital-key-46"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-600 hover:underline"
+                >
+                    digital car key migration
+                </a>
+            </li>
+            <li>
+              Software Developer @ Avena Tech; full-stack, CI/CD,
+              containerized services
+            </li>
+            <li>
+              Undergraduate Research Assistant @ SFU iXLab; simulation systems
+              for ML validation
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-gray-600">
+          and I love badminton
+        </p>
+      </section>
+    </main>
   </body>
 </html>
